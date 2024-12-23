@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maries Inspirationshof</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+        body {
+            font-family: 'Nanum Brush Script', cursive;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f3e8;
+        }
+        header {
+            background: linear-gradient(90deg, #d4af37, #9b7653);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 20px;
+            margin: 10px 0 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #9b7653;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .art-item {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .art-item:hover {
+            transform: translateY(-5px);
+        }
+        .art-item img {
+            width: 100%;
+            height: auto;
+        }
+        .art-item h3 {
+            padding: 15px;
+            margin: 0;
+            font-size: 24px;
+            background-color: #f8f3e8;
+        }
+        .art-item p {
+            padding: 0 15px 15px;
+            margin: 0;
+            color: #555;
+        }
+        .art-item button {
+            display: block;
+            width: calc(100% - 30px);
+            margin: 0 15px 15px;
+            padding: 10px;
+            background-color: #9b7653;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .art-item button:hover {
+            background-color: #d4af37;
+        }
+        section {
+            padding: 20px;
+        }
+        section#about {
+            background-color: #ffffff;
+        }
+        section#contact {
+            background-color: #f8f3e8;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #9b7653;
+            color: white;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maries Inspirationshof</h1>
+        <p>Discover unique and soulful artworks</p>
+    </header>
+    <nav>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section id="gallery" class="gallery">
+            <div class="art-item">
+                <img src="art1.jpg" alt="Black and White Hyperrealism">
+                <h3>흑백 극사실 제작</h3>
+                <p>₩500,000</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="art2.jpg" alt="Character Design">
+                <h3>캐릭터 제작</h3>
+                <p>₩300,000</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="art-item">
+                <img src="art3.jpg" alt="Color Hyperrealism">
+                <h3>컬러 극사실 제작</h3>
+                <p>₩700,000</p>
+                <button>Buy Now</button>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About the Artist</h2>
+            <p>Welcome to Maries Inspirationshof! I am passionate about creating art that inspires and connects with people. Each piece is a reflection of my thoughts, emotions, and creativity. Thank you for visiting and supporting my work.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: just_letme@naver.com</p>
+            <p>Phone: 010-515-2117</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Maries Inspirationshof. All Rights Reserved.
+    </footer>
+</body>
+</html>
