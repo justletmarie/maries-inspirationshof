@@ -5,22 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maries Inspirationshof</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Nanum Brush Script', cursive;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f8f3e8;
         }
         header {
-            background-color: #333;
+            background: linear-gradient(90deg, #d4af37, #9b7653);
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        header p {
+            font-size: 20px;
+            margin: 10px 0 0;
         }
         nav {
             display: flex;
             justify-content: center;
-            background-color: #444;
+            background-color: #9b7653;
             padding: 10px;
         }
         nav a {
@@ -28,6 +38,7 @@
             text-decoration: none;
             margin: 0 15px;
             font-size: 18px;
+            font-weight: bold;
         }
         nav a:hover {
             text-decoration: underline;
@@ -41,44 +52,67 @@
         .art-item {
             background: white;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .art-item:hover {
+            transform: translateY(-5px);
         }
         .art-item img {
             width: 100%;
             height: auto;
         }
         .art-item h3 {
-            padding: 10px;
+            padding: 15px;
             margin: 0;
-            font-size: 20px;
+            font-size: 24px;
+            background-color: #f8f3e8;
         }
         .art-item p {
-            padding: 0 10px 10px;
+            padding: 0 15px 15px;
             margin: 0;
             color: #555;
         }
         .art-item button {
             display: block;
-            width: calc(100% - 20px);
-            margin: 10px;
+            width: calc(100% - 30px);
+            margin: 0 15px 15px;
             padding: 10px;
-            background-color: #333;
+            background-color: #9b7653;
             color: white;
             border: none;
             border-radius: 5px;
+            font-size: 16px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
         .art-item button:hover {
-            background-color: #555;
+            background-color: #d4af37;
+        }
+        section {
+            padding: 20px;
+        }
+        section#about {
+            background-color: #ffffff;
+        }
+        section#contact {
+            background-color: #f8f3e8;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #9b7653;
+            color: white;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Maries Inspirationshof</h1>
-        <p>Discover and buy unique artworks</p>
+        <p>Discover unique and soulful artworks</p>
     </header>
     <nav>
         <a href="#gallery">Gallery</a>
@@ -106,15 +140,18 @@
                 <button>Buy Now</button>
             </div>
         </section>
-        <section id="about" style="padding: 20px; background-color: #fff;">
+        <section id="about">
             <h2>About the Artist</h2>
             <p>Welcome to Maries Inspirationshof! I am passionate about creating art that inspires and connects with people. Each piece is a reflection of my thoughts, emotions, and creativity. Thank you for visiting and supporting my work.</p>
         </section>
-        <section id="contact" style="padding: 20px; background-color: #f5f5f5;">
+        <section id="contact">
             <h2>Contact</h2>
             <p>Email: just_letme@naver.com</p>
             <p>Phone: 010-515-2117</p>
         </section>
     </main>
+    <footer>
+        &copy; 2024 Maries Inspirationshof. All Rights Reserved.
+    </footer>
 </body>
 </html>
